@@ -23,6 +23,9 @@ module.exports = (req, res, next) => {
       id: decoded.userId,
       ...decoded
     };
+        //console.log(req.user = {
+     // role: user.role,
+   // });
 
     next();
   } catch (message) {
