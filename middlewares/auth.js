@@ -23,6 +23,12 @@ module.exports = (req, res, next) => {
       id: decoded.userId,
       ...decoded
     };
+   //req.user = {
+      //id: decoded.userId,
+      //email: decoded.email,
+      //role: decoded.role, 
+     // ...decoded,
+   // };
 
     next();
   } catch (message) {
